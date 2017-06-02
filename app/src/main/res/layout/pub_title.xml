@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/title_bg">
+
+    <RadioGroup
+        android:id="@+id/pub_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pub_title_left"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_topic_leftbtn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/guanzhu"
+            android:textColor="@drawable/tab_title_color" />
+
+        <RadioButton
+
+            android:id="@+id/pub_title_right"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_topic_rightbtn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/remen"
+            android:textColor="@drawable/tab_title_color" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_topic_search_selector" />
+</RelativeLayout>

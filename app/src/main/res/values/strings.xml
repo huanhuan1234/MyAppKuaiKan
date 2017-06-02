@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyAppKuaiKan</string>
+    <string name="tab_home">漫画</string>
+    <string name="tab_find">发现</string>
+    <string name="tab_feed">V社区</string>
+    <string name="tab_me">我的</string>
+    <string name="guanzhu">关注</string>
+    <string name="remen">热门</string>
+    <string name="tuijian">推荐</string>
+    <string name="fenlei">分类</string>
+    <string name="girl">女生版</string>
+    <string name="type">分类</string>
+    <string name="plaza">广场</string>
+    <string name="attent">关注</string>
+</resources>

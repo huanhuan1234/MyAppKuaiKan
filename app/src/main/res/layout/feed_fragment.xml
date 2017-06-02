@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow1"
+        android:id="@+id/title"
+        >
+        <RadioGroup
+            android:id="@+id/rg"
+            style="@style/radioGroup"
+            >
+            <RadioButton
+                android:id="@+id/rb1"
+                style="@style/title_zuo"
+                android:text="@string/attent"
+                />
+            <RadioButton
+                android:id="@+id/rb2"
+                style="@style/title_you"
+                android:checked="true"
+                android:text="@string/plaza"/>
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/image"
+            style="@style/image_you"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/v_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"
+        ></android.support.v4.view.ViewPager>
+
+</LinearLayout>

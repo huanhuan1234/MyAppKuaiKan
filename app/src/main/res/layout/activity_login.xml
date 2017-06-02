@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gold"
+    >
+
+
+    <ImageView
+        android:id="@+id/image_fh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_account_back_pressed"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text_mima"
+        android:text="忘记密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_fh"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_fh"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/love_selector"
+         />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="  支持中国大陆"
+        android:textSize="10sp"
+        android:layout_below="@+id/image_love"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_login_phone_shape"
+         />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:hint="  8-30位数字或英文"
+        android:textSize="10sp"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/edit_phone"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_login_mima_shape"
+         />
+
+    <TextView
+        android:id="@+id/text_toast"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_password"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/button"
+        android:text="登陆"
+        android:textColor="@color/white"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_toast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#1f1f1f"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/text_lj_zhuce"
+        android:text="立即注册"
+        android:textColor="@color/saddlebrown"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/button"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:text="— 其他方式登陆 —"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_lj_zhuce"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/silver"
+         />
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_login_qq"/>
+        <ImageView
+            android:id="@+id/wb"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_login_weibo"/>
+        <ImageView
+            android:id="@+id/wx"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_login_weixin"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
